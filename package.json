@@ -1,0 +1,26 @@
+{
+  "name": "pratica-holydayzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T9-Driven/pratica-holydayzer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T9-Driven/pratica-holydayzer/issues"
+  },
+  "homepage": "https://github.com/T9-Driven/pratica-holydayzer#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}

@@ -36,6 +36,15 @@ server.get("/is-today-holiday", (_, res) => {
   res.send('Não, hoje não é feriado')
 })
 
+// Bônus
+app.get("/holidays/:month", (req, res) => {
+  const month = req.params.month;
+
+  const holidaysMonth = holidays.filter((item) => item.date.split("/")[0] === month);
+
+  res.send(holidaysMonth);
+});
+
 const PORT = 5005
 
 server.listen(PORT, () => console.log(`Servidor rodando na porta: ${PORT}`))
